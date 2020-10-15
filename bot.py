@@ -51,5 +51,27 @@ async def on_message(ctx):
 @bot.command(name="1v1", help="sends a 1v1")
 async def on_message(ctx):
 	await ctx.send(file=discord.File("1v1 me noob.png"))
+@bot.command(name="votekick", help="kicks someone")
+async def on_message(ctx, arg): #needs random chance, needs to get @'s, needs to disconnect someone
+#needs to get a @'d person
+	print(ctx)
+	print(ctx.author.display_name)
+	print(ctx.voice_client)
+	print(ctx.args[1])
+	print(arg)
+
+	await ctx.send(str(ctx.args[1]) + " was the Imposter")
+"""
+else:
+	person @'d + 1
+	send (num / <needed>)
+if <people in senders vc> / 2 + 1 < amountL:
+	if person in vc
+		if *chacne*
+			is imposter
+		is not imposter
+		kick
+"""
+
 
 bot.run(TOKEN)
