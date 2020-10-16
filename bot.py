@@ -54,11 +54,13 @@ async def on_message(ctx):
 @bot.command(name="votekick", help="kicks someone")
 async def on_message(ctx, arg): #needs random chance, needs to get @'s, needs to disconnect someone
 #needs to get a @'d person
+#guild --> voice channels --> people
 	print(ctx)
 	print(ctx.author.display_name)
-	print(ctx.voice_client)
+	print(ctx.guild)
+	print(ctx.guild.voice_channels)
 	print(ctx.args[1])
-	print(arg)
+	print(str(arg))
 
 	await ctx.send(str(ctx.args[1]) + " was the Imposter")
 """
