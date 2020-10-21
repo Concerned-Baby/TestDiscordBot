@@ -62,8 +62,8 @@ async def on_message(ctx, arg): #needs random chance, needs to get @'s, needs to
 	for vc in ctx.guild.voice_channels:
 		for member in vc.members:
 			print("Member display: " + str(member.display_name))
-			print("Member: " + str(member))
-			print("Arg: " + str(arg))
+			print("Member: " + str(member.id))
+			print("Arg: " + str(arg)[4:-1])
 			print("Is member: " + str(arg == member))
 		print(vc.members)
 	print(ctx.args[1])
