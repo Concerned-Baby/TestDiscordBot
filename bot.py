@@ -52,9 +52,15 @@ async def on_message(ctx):
 async def on_message(ctx):
 	await ctx.send(file=discord.File("1v1 me noob.png"))
 @bot.command(name="votekick", help="kicks someone")
-async def on_message(ctx, arg): #needs random chance, needs to get @'s, needs to disconnect someone
+async def on_message(ctx, args): #needs random chance, needs to get @'s, needs to disconnect someone
 #needs to get a @'d person
 #guild --> voice channels --> people
+
+#TODO:
+#match channel members to args
+#make sure that the vc's are being iterated throught
+#make sure args are correct, and sent a message if not
+
 	print(ctx)
 	print(ctx.author.display_name)
 	print(ctx.guild)
@@ -63,11 +69,10 @@ async def on_message(ctx, arg): #needs random chance, needs to get @'s, needs to
 		for member in vc.members:
 			print("Member display: " + str(member.display_name))
 			print("Member: " + str(member.id))
-			print("Arg: " + str(arg)[4:-1])
+			print("Arg: " + str(ctx.args[1])[4:-1])
 			print("Is member: " + str(arg == member))
 		print(vc.members)
 	print(ctx.args[1])
-	print(str(arg))
 
 
 	await ctx.send(str(ctx.args[1]) + " was the Imposter")
