@@ -60,7 +60,7 @@ async def on_message(ctx, arg): #needs random chance, needs to get @'s, needs to
 #match channel members to args
 #make sure that the vc's are being iterated throught
 #make sure args are correct, and sent a message if not
-
+	print(str(ctx))
 	print(ctx.guild.voice_channels)
 	for vc in ctx.guild.voice_channels:
 		print("VC Found: " + str(vc)) #look for different attributes
@@ -68,8 +68,8 @@ async def on_message(ctx, arg): #needs random chance, needs to get @'s, needs to
 		for member in vc.members:
 			print("Member display:\t " + str(member.display_name))
 			print("Member: \t" + str(member.id))
-			print("Arg: " + str(ctx.args[1])[4:-1])
-			print("Is member: " + str(arg == member))
+			print("Arg: \t" + str(ctx.args[1])[3:-1])
+			print("Is member: " + (str(ctx.args[1])[3:-1] == str(member.id)))
 		print(vc.members)
 
 	await ctx.send(str(ctx.args[1]) + " was the Imposter")
