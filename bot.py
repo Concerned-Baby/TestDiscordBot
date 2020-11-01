@@ -44,9 +44,9 @@ async def on_error(event, *args, **kwargs):
 #
 # COMMANDS
 #
-@bot.command(name="fatass", help="literally fatass")
-async def on_message(ctx):
-	await ctx.send("im a fatass")
+@bot.command(name="fatshame", help="literally bullying")
+async def on_message(ctx, arg):
+	await ctx.send(str(ctx.args[1]) + " is fat lmao")
 
 @bot.command(name="1v1", help="sends a 1v1")
 async def on_message(ctx):
