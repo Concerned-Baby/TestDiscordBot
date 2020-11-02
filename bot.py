@@ -46,6 +46,7 @@ async def on_error(event, *args, **kwargs):
 #
 @bot.command(name="fatshame", help="literally bullying")
 async def on_message(ctx, arg):
+	print("fatshame")
 	await ctx.send(str(ctx.args[1]) + " is fat lmao")
 
 @bot.command(name="1v1", help="sends a 1v1")
@@ -70,7 +71,7 @@ async def on_message(ctx, arg): #needs random chance, needs to get @'s, needs to
 			print("Member: \t" + str(member.id))
 			print("Arg: \t" + str(ctx.args[1])[3:-1])
 			print("Is member: " + str(str(ctx.args[1])[3:-1] == str(member.id)))
-		print(vc.members)
+		#print(vc.members)
 
 	await ctx.send(str(ctx.args[1]) + " was the Imposter")
 """
