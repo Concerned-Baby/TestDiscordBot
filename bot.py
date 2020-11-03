@@ -6,6 +6,8 @@ async keyword
 @ keyword
 raise keyword
 __IDEA__
+need to give prompt on error
+
 
 __NOTES__
 updates each time I run it
@@ -52,6 +54,7 @@ async def on_message(ctx, arg):
 @bot.command(name="1v1", help="sends a 1v1")
 async def on_message(ctx):
 	await ctx.send(file=discord.File("1v1 me noob.png"))
+	await ctx.send("its not working. please don't try again")
 @bot.command(name="votekick", help="kicks someone")
 async def on_message(ctx, arg): #needs random chance, needs to get @'s, needs to disconnect someone
 #needs to get a @'d person
