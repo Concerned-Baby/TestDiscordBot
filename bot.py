@@ -55,6 +55,12 @@ async def on_message(ctx, arg):
 async def on_message(ctx):
 	await ctx.send(file=discord.File("1v1 me noob.png"))
 	await ctx.send("its not working. please don't try again")
+
+@bot.command(name="k", help="literally bullying")
+async def on_message(ctx, arg):
+	print("k")
+	await ctx.send("k")
+
 @bot.command(name="votekick", help="kicks someone")
 async def on_message(ctx, arg): #needs random chance, needs to get @'s, needs to disconnect someone
 #needs to get a @'d person
