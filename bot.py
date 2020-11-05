@@ -56,7 +56,7 @@ async def on_message(ctx):
 	await ctx.send(file=discord.File("1v1 me noob.png"))
 	await ctx.send("its not working. please don't try again")
 
-@bot.command(name="k", help="literally bullying")
+@bot.command(name="k", help="please dont use this")
 async def on_message(ctx, arg):
 	print("k")
 	await ctx.send("k")
