@@ -59,7 +59,7 @@ async def on_message(ctx):
 @bot.command(name="k", help="please dont use this")
 async def on_message(ctx, arg):
 	print("k")
-	await ctx.send("k")
+	await ctx.send("u can't read")
 
 @bot.command(name="votekick", help="kicks someone")
 async def on_message(ctx, arg): #needs random chance, needs to get @'s, needs to disconnect someone
