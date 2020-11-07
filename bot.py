@@ -61,7 +61,7 @@ async def on_message(ctx, arg):
 	print("k")
 	await ctx.send("u can't read")
 
-@bot.command(name="votekick", help="kicks someone")
+@bot.command(name="votekick", help="votes for them")
 async def on_message(ctx, arg): #needs random chance, needs to get @'s, needs to disconnect someone
 #needs to get a @'d person
 #guild --> voice channels --> people
