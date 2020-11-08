@@ -18,10 +18,17 @@ import os
 import discord
 from discord.ext import commands
 from dotenv import load_dotenv
+import datetime
+
+def log(string):
+	log = open("logs/runtimelog.txt", "a")
+	log.write("[%s]%s" % (str(datetime.now()) ,string))
+	log.close()
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
-print(TOKEN)
+
+log("open on {TOKEN}")
 
 bot = commands.Bot(command_prefix='ye')
 
@@ -38,7 +45,7 @@ async def on_member_join(member):
 
 @bot.event
 async def on_error(event, *args, **kwargs):
-	with open('logs/err.log', 'a') as f:
+	with open('logs/errlog.txt', 'a') as f:
 		if event == 'on_message':
 			f.write(f'Unhandled Message: {args[0]}\n')
 		else:
@@ -59,7 +66,7 @@ async def on_message(ctx):
 @bot.command(name="k", help="please dont use this")
 async def on_message(ctx, arg):
 	print("k")
-	await ctx.send("u can't read")
+	await ctx.send("read the help menu and piss off")
 
 @bot.command(name="votekick", help="votes for them")
 async def on_message(ctx, arg): #needs random chance, needs to get @'s, needs to disconnect someone
