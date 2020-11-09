@@ -22,7 +22,7 @@ import datetime
 
 def log(string):
 	log = open("logs/runtimelog.txt", "a")
-	log.write("[%s]%s" % (str(datetime.now()) ,string))
+	log.write("[%s]%s" % (str(datetime.now()), string))
 	log.close()
 
 load_dotenv()
@@ -55,17 +55,18 @@ async def on_error(event, *args, **kwargs):
 #
 @bot.command(name="fatshame", help="literally bullying")
 async def on_message(ctx, arg):
-	print("fatshame")
+	log("CMD: fatshame")
 	await ctx.send(str(ctx.args[1]) + " is fat lmao")
 
 @bot.command(name="1v1", help="sends a 1v1")
 async def on_message(ctx):
+	log("CMD: 1v1")
 	await ctx.send(file=discord.File("1v1 me noob.png"))
 	await ctx.send("its not working. please don't try again")
 
 @bot.command(name="k", help="please dont use this")
 async def on_message(ctx, arg):
-	print("k")
+	log("CMD: k")
 	await ctx.send("read the help menu and piss off")
 
 @bot.command(name="votekick", help="votes for them")
@@ -77,6 +78,7 @@ async def on_message(ctx, arg): #needs random chance, needs to get @'s, needs to
 #match channel members to args
 #make sure that the vc's are being iterated throught
 #make sure args are correct, and sent a message if not
+	log("CMD: votekick")
 	print(str(ctx))
 	#print(ctx.guild.voice_channels)
 	for vc in ctx.guild.voice_channels:
