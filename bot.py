@@ -5,12 +5,13 @@ await keyword
 async keyword
 @ keyword
 raise keyword
+
 __IDEA__
 need to give prompt on error
 
 
 __NOTES__
-updates each time I run it
+updates each time I run it from command time
 """
 
 import os
