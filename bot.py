@@ -39,9 +39,10 @@ async def on_ready():
 
 @bot.event
 async def on_member_join(member):
+	log("Member join {member.name}")
 	await member.create_dm()
 	await member.dm_channel.send(
-		f'Hi {member.name}, welcome fatass'
+		"Hi {member.name}, welcome fatass"
 	)
 
 @bot.event
