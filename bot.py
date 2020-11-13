@@ -90,16 +90,19 @@ async def on_message(ctx):
 	file.close()
 	await ctx.send("Best Score: " + str(best))
 
-@bot.command(name="topscore", help="Gets the top 10 count score for this server")
-async def on_message(ctx):
+@bot.command(name="topscores", help="Gets the top 10 count score for this server")
+async def on_message(ctx, arg=10):
 	log("CMD: setscore")
 	print(str(ctx.guild))
 	file = open("scorecounter/%sscores.txt" % str(ctx.guild), "r")
 	bests = []
 	for line in file.readlines():
-		best = max(best, int(line))
+		bests.append(int(line))
 	file.close()
-	await ctx.send("Best Score: " + str(best))
+	bests.sort()
+	await ctx.send("Best %d Scores: " % arg)
+	for i in range(1, arg + 1): #need to have if none
+		awaitctx.send("%d) %d" % (i, bests[-1 * i - 1]))
 
 
 @bot.command(name="votekick", help="[n/a] votes for them")
