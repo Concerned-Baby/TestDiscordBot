@@ -22,7 +22,7 @@ import datetime
 
 def log(string):
 	log = open("logs/runtimelog.txt", "a")
-	log.write("[%s] %s" % (str(1), string))
+	log.write("[%s] %s\n" % (str(1), string))
 	log.close()
 
 load_dotenv()
