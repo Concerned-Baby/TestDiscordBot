@@ -101,8 +101,11 @@ async def on_message(ctx, arg=10):
 	file.close()
 	bests.sort()
 	await ctx.send("Best %d Scores: " % arg)
-	for i in range(1, arg + 1): #need to have if none
-		awaitctx.send("%d) %d" % (i, bests[-1 * i - 1]))
+	for i in range(1, arg + 1):
+		try:
+			await ctx.send("%d) %d" % (i, bests[-1 * i - 1]))
+		except IndexError:
+			await ctx.send("%d) 0" % (i))
 
 
 @bot.command(name="votekick", help="[n/a] votes for them")
