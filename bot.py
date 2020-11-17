@@ -100,12 +100,14 @@ async def on_message(ctx, arg=10):
 		bests.append(int(line))
 	file.close()
 	bests.sort()
-	await ctx.send("Best %d Scores: " % arg)
+	text = ""
+	text += ("Best %d Scores for %s: \n" % (arg, str(ctx.guild)))
 	for i in range(1, arg + 1):
 		try:
-			await ctx.send("%d) %d" % (i, bests[-1 * i - 1]))
+			text += ("%d) %d\n" % (i, bests[-1 * i]))
 		except IndexError:
-			await ctx.send("%d) 0" % (i))
+			text += ("%d) 0\n" % (i))
+	await ctx.send(text)
 
 
 @bot.command(name="votekick", help="[n/a] votes for them")
