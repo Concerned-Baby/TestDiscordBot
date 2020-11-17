@@ -8,6 +8,7 @@ raise keyword
 
 __IDEA__
 need to give prompt on error
+except
 
 
 __NOTES__
@@ -55,9 +56,12 @@ async def on_error(event, *args, **kwargs):
 # COMMANDS
 #
 @bot.command(name="fatshame", help="literally bullying")
-async def on_message(ctx, arg):
+async def on_message(ctx, who, times=1):
 	log("CMD: fatshame")
-	await ctx.send(str(ctx.args[1]) + " is fat lmao")
+	if who == "":
+		await ctx.send("Please Specify Who Is Fat [yefatshame @ye boi]")
+	for i in range(0, 1):
+		await ctx.send((str(who) + " is fat lmao") * times)
 
 @bot.command(name="1v1", help="[n/a] sends a 1v1")
 async def on_message(ctx):
@@ -66,11 +70,11 @@ async def on_message(ctx):
 	await ctx.send("its not working. please don't try again")
 
 @bot.command(name="k", help="please dont use this")
-async def on_message(ctx, arg):
+async def on_message(ctx):
 	log("CMD: k")
 	await ctx.send("read the help menu and piss off")
 
-@bot.command(name="setscore", help="Sets a new score for count")
+@bot.command(name="setscore", help="sets a new score for count")
 async def on_message(ctx, arg):
 	log("CMD: setscore")
 	print(str(ctx.guild))
@@ -79,7 +83,7 @@ async def on_message(ctx, arg):
 	file.close()
 	await ctx.send("New Score: " + str(arg) + " Logged")
 
-@bot.command(name="topscore", help="[n/a] Gets the top count score for this server")
+@bot.command(name="topscore", help="Gets the top count score for this server")
 async def on_message(ctx):
 	log("CMD: setscore")
 	print(str(ctx.guild))
