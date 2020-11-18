@@ -61,7 +61,7 @@ async def on_message(ctx, who, times=1):
 	if who == "":
 		await ctx.send("Please Specify Who Is Fat [yefatshame @ye boi]")
 	for i in range(0, 1):
-		await ctx.send((str(who) + " is fat lmao") * times)
+		await ctx.send((str(who) + " is fat lmao\n") * times)
 
 @bot.command(name="1v1", help="[n/a] sends a 1v1")
 async def on_message(ctx):
@@ -112,6 +112,10 @@ async def on_message(ctx, arg=10):
 		except IndexError:
 			text += ("%d) 0\n" % (i))
 	await ctx.send(text)
+
+@bot.command(name="THICC", help="[n/a] literally bullying")
+async def on_message(ctx):
+	pass #find and send a thicc
 
 
 @bot.command(name="votekick", help="[n/a] votes for them")
