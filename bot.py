@@ -20,6 +20,7 @@ import discord
 from discord.ext import commands
 from dotenv import load_dotenv
 import datetime
+import __options
 
 def log(string):
 	log = open("logs/runtimelog.txt", "a")
@@ -61,12 +62,12 @@ async def on_message(ctx, who, times=1):
 	if who == "":
 		await ctx.send("Please Specify Who Is Fat [yefatshame @ye boi]")
 	for i in range(0, 1):
-		await ctx.send((str(who) + " is fat lmao\n") * times)
+		await ctx.send(__options.fatgenerate(str(who)) * times)
 
 @bot.command(name="1v1", help="[n/a] sends a 1v1")
 async def on_message(ctx):
 	log("CMD: 1v1")
-	await ctx.send(file=discord.File("1v1 me noob.png"))
+	await ctx.send(file=discord.File("res/1v1 me noob.png"))
 	await ctx.send("its not working. please don't try again")
 
 @bot.command(name="k", help="please dont use this")
