@@ -9,6 +9,7 @@ raise keyword
 __IDEA__
 need to give prompt on error
 except
+random person generator
 
 
 __NOTES__
@@ -43,7 +44,7 @@ async def on_member_join(member):
 	log("Member join {member.name}")
 	await member.create_dm()
 	await member.dm_channel.send(
-		"Hi {member.name}, welcome fatass"
+		"Hi {member.name}, welcome n00b"
 	)
 
 @bot.event
@@ -60,14 +61,14 @@ async def on_error(event, *args, **kwargs):
 async def on_message(ctx, who, times=1):
 	log("CMD: fatshame")
 	if who == "":
-		await ctx.send("Please Specify Who Is Fat [yefatshame @ye boi]")
+		await ctx.send("Please Specify Who Is Fat [Example: yefatshame @ye boi]")
 	for i in range(0, 1):
 		await ctx.send(__options.fatgenerate(str(who)) * times)
 
 @bot.command(name="1v1", help="[n/a] sends a 1v1")
 async def on_message(ctx):
 	log("CMD: 1v1")
-	await ctx.send(file=discord.File("res/1v1 me noob.png"))
+	#await ctx.send(file=discord.File("res/1v1 me noob.png"))
 	await ctx.send("its not working. please don't try again")
 
 @bot.command(name="k", help="please dont use this")
@@ -114,9 +115,12 @@ async def on_message(ctx, arg=10):
 			text += ("%d) 0\n" % (i))
 	await ctx.send(text)
 
-@bot.command(name="THICC", help="[n/a] literally bullying")
+@bot.command(name="THICC", help="[n/a] teehee")
 async def on_message(ctx):
-	pass #find and send a thicc
+	log("CMD: thicc") #find and send a thicc
+	num = 1
+	ctx.send(file=discord.File("res/thicc/%d.jpg" % num))
+
 
 
 @bot.command(name="votekick", help="[n/a] votes for them")
