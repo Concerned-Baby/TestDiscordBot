@@ -22,6 +22,7 @@ from discord.ext import commands
 from dotenv import load_dotenv
 import datetime
 import __options
+import random
 
 def log(string):
 	log = open("logs/runtimelog.txt", "a")
@@ -115,11 +116,11 @@ async def on_message(ctx, arg=10):
 			text += ("%d) 0\n" % (i))
 	await ctx.send(text)
 
-@bot.command(name="THICC", help="[n/a] teehee")
+@bot.command(name="THICC", help="teehee")
 async def on_message(ctx):
-	log("CMD: thicc") #find and send a thicc
-	num = 1
-	ctx.send(file=discord.File("res/thicc/%d.jpg" % num))
+	log("CMD: thicc")
+	files = os.listdir("res/thicc/")
+	ctx.send(file=discord.File(files[random.randint(1, len(files))]))
 
 
 
