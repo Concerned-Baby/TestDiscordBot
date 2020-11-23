@@ -111,9 +111,9 @@ async def on_message(ctx, arg=10):
 	text += ("Best %d Scores for %s: \n" % (arg, str(ctx.guild)))
 	for i in range(1, arg + 1):
 		try:
-			text += ("%d) %d\n" % (i, bests[-1 * i]))
+			text += ("%d) \t%d\n" % (i, bests[-1 * i]))
 		except IndexError:
-			text += ("%d) 0\n" % (i))
+			text += ("%d) \t0\n" % (i))
 	await ctx.send(text)
 
 @bot.command(name="THICC", help="teehee")
