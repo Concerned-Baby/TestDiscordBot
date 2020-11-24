@@ -9,5 +9,4 @@ fatquotes = [
 ]
 
 def fatgenerate(name):
-	random.seed(namereplace)
 	return fatquotes[random.uniform(0, len(fatquotes) - 1)].replace(namereplace, name)
