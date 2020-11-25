@@ -165,3 +165,14 @@
 [1] CMD: setscore
 [1] open on {TOKEN}
 [1] CMD: setscore
+[1] open on {TOKEN}
+[1] CMD: setscore
+[1] CMD: setscore
+[1] open on {TOKEN}
+[1] CMD: setscore
+[1] open on {TOKEN}
+[1] CMD: setscore
+[1] open on {TOKEN}
+[1] CMD: setscore
+[1] open on {TOKEN}
+[1] CMD: setscore
