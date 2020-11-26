@@ -145,9 +145,7 @@ async def on_message(ctx, arg): #needs random chance, needs to get @'s, needs to
 			print("Arg: \t" + str(ctx.args[1])[3:-1])
 			print("Is Node: \t" + str(str(ctx.args[1])[3:-1] == str(member.id)))
 			print("Is Author: \t" + str(False))
-		#print(vc.members)
-
-	await ctx.send(str(ctx.args[1]) + " was the Imposter")
+	await ctx.send(str(ctx.args[1]) + " was not an Imposter")
 """
 else:
 	person @'d + 1
