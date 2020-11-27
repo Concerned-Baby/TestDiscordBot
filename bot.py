@@ -67,10 +67,12 @@ async def on_message(ctx, who, times=1):
 		await ctx.send(__options.fatgenerate(str(who)) * times)
 
 @bot.command(name="1v1", help="[n/a] sends a 1v1")
-async def on_message(ctx):
+async def on_message(ctx, attendee):
 	log("CMD: 1v1")
 	#await ctx.send(file=discord.File("res/1v1 me noob.png"))
 	await ctx.send("its not working. please don't try again")
+
+
 
 @bot.command(name="k", help="please dont use this")
 async def on_message(ctx):
@@ -144,7 +146,7 @@ async def on_message(ctx, arg): #needs random chance, needs to get @'s, needs to
 			print("Member: \t" + str(member.id))
 			print("Arg: \t" + str(ctx.args[1])[3:-1])
 			print("Is Node: \t" + str(str(ctx.args[1])[3:-1] == str(member.id)))
-			print("Is Author: \t" + str(False))
+			print("Is Author: \t" + str(ctx.author))
 	await ctx.send(str(ctx.args[1]) + " was not an Imposter")
 """
 else:
