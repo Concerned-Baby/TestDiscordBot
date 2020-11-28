@@ -10,7 +10,7 @@ __IDEA__
 need to give prompt on error
 except
 random person generator
-
+clear logs on startup
 
 __NOTES__
 updates each time I run it from command time
