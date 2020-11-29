@@ -179,3 +179,11 @@
 [1] open on {TOKEN}
 [1] open on {TOKEN}
 [1] CMD: setscore
+[1] CMD: setscore
+[1] CMD: 1v1
+[1] CMD: thicc
+[1] open on {TOKEN}
+[1] open on {TOKEN}
+[1] CMD: setscore
+[1] open on {TOKEN}
+[1] open on {TOKEN}
