@@ -23,10 +23,13 @@ from dotenv import load_dotenv
 import datetime
 import __options
 import random
+import time
 
 def log(string):
 	log = open("logs/runtimelog.txt", "a")
-	log.write("[%s] %s\n" % (str(1), string))
+	t = time.localtime()
+	current_time = time.strftime("%H:%M:%S", t)
+	log.write("[%s] %s\n" % (str(current_time), string))
 	log.close()
 
 load_dotenv()
