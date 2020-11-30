@@ -187,3 +187,24 @@
 [1] CMD: setscore
 [1] open on {TOKEN}
 [1] open on {TOKEN}
+[08:10:00] open on {TOKEN}
+[08:10:18] CMD: setscore
+[08:10:21] CMD: setscore
+[08:24:20] open on {TOKEN}
+[08:24:46] CMD: fatshame
+[08:25:35] open on {TOKEN}
+[08:25:42] CMD: fatshame
+[08:25:47] CMD: fatshame
+[08:25:53] CMD: fatshame
+[08:26:24] open on {TOKEN}
+[08:26:34] CMD: fatshame
+[08:26:53] CMD: fatshame
+[08:26:59] CMD: fatshame
+[08:27:06] CMD: fatshame
+[08:27:20] CMD: thicc
+[08:27:24] CMD: k
+[08:28:00] CMD: setscore
+[08:28:13] CMD: setscore
+[08:28:46] CMD: setscore
+[08:30:58] open on {TOKEN}
+[08:31:05] CMD: setscore
