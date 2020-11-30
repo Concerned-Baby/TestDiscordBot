@@ -26,9 +26,9 @@ import random
 import time
 
 def log(string):
-	log = open("logs/runtimelog.txt", "a")
 	t = time.localtime()
 	current_time = time.strftime("%H:%M:%S", t)
+	log = open("logs/runtimelog.txt", "a")
 	log.write("[%s] %s\n" % (str(current_time), string))
 	log.close()
 
