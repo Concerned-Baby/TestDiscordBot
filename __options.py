@@ -7,7 +7,10 @@ fatquotes = [
 	namereplace + " is fat lmao\n",
 	namereplace + " has a double chin lmao\n",
 	namereplace + " is like my mom\n",
-	namereplace + " is way too thicc\n"
+	namereplace + " is way too thicc\n",
+	namereplace + " needs to workout more\n",
+	namereplace + " can only roll down hills\n",
+	namereplace + " is so fat, McDonalds won't serve them\n"
 ]
 
 def fatgenerate(name):
