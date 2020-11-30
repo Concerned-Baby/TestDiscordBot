@@ -126,7 +126,7 @@ async def on_message(ctx, arg=10):
 async def on_message(ctx):
 	log("CMD: thicc")
 	files = os.listdir("res/thicc/")
-	ctx.send(file=discord.File(files[random.randint(1, len(files))]))
+	ctx.send(file=discord.File(files[random.randint(0, len(files)) - 1]))
 
 
 
