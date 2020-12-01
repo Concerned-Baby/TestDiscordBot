@@ -81,12 +81,12 @@ async def on_message(ctx, attendee):
 @bot.command(name="k", help="please dont use this")
 async def on_message(ctx):
 	log("CMD: k")
-	await ctx.send("read the help menu and piss off")
+	await ctx.send("read the help menu")
 
 @bot.command(name="logscore", help="sets a new score for count")
 async def on_message(ctx, arg):
 	log("CMD: setscore")
-	print(str(ctx.guild))
+	log("from: " + str(ctx.guild))
 	file = open("scorecounter/%sscores.txt" % str(ctx.guild), "a")
 	file.write(str(arg) + "\n")
 	file.close()
