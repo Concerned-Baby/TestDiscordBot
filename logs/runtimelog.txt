@@ -208,3 +208,5 @@
 [08:28:46] CMD: setscore
 [08:30:58] open on {TOKEN}
 [08:31:05] CMD: setscore
+[08:43:19] open on {TOKEN}
+[08:43:34] CMD: fatshame
