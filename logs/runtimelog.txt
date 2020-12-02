@@ -210,3 +210,31 @@
 [08:31:05] CMD: setscore
 [08:43:19] open on {TOKEN}
 [08:43:34] CMD: fatshame
+[20:33:45] open on {TOKEN}
+[20:33:49] CMD: setscore
+[20:33:49] from: Yeet Nether
+[20:33:51] CMD: setscore
+[20:33:51] from: Yeet Nether
+[20:33:56] CMD: setscore
+[20:33:56] from: Yeet Nether
+[20:33:59] CMD: setscore
+[20:33:59] from: Yeet Nether
+[20:34:21] CMD: setscore
+[20:34:21] from: Yeet Nether
+[10:08:06] open on {TOKEN}
+[10:08:14] CMD: setscore
+[10:08:14] from: Yeet Nether
+[10:08:20] CMD: setscore
+[10:08:20] from: Yeet Nether
+[10:08:47] open on {TOKEN}
+[10:09:04] CMD: setscore
+[10:09:04] from: Yeet Nether
+[10:09:19] open on {TOKEN}
+[10:09:22] CMD: setscore
+[10:09:27] CMD: setscore
+[10:09:43] CMD: setscore
+[11:41:20] open on {TOKEN}
+[11:41:51] open on {TOKEN}
+[11:42:20] open on {TOKEN}
+[11:42:26] CMD: setscore
+[11:42:26] from: Yeet Nether
