@@ -64,6 +64,7 @@ async def on_error(event, *args, **kwargs):
 @bot.command(name="fatshame", help="literally bullying")
 async def on_message(ctx, who, times=1):
 	log("CMD: fatshame")
+	log("From: " + str(ctx.guild))
 	if who == "":
 		await ctx.send("Please Specify Who Is Fat [Example: yefatshame @ye boi]")
 	if times > 20:
@@ -81,12 +82,13 @@ async def on_message(ctx, attendee):
 @bot.command(name="k", help="please dont use this")
 async def on_message(ctx):
 	log("CMD: k")
+	log("From: " + str(ctx.guild))
 	await ctx.send("read the help menu")
 
 @bot.command(name="logscore", help="sets a new score for count")
 async def on_message(ctx, arg):
 	log("CMD: setscore")
-	log("from: " + str(ctx.guild))
+	log("From: " + str(ctx.guild))
 	file = open("scorecounter/%sscores.txt" % str(ctx.guild), "a")
 	file.write(str(arg) + "\n")
 	file.close()
@@ -95,7 +97,7 @@ async def on_message(ctx, arg):
 @bot.command(name="topscore", help="Gets the top count score for this server")
 async def on_message(ctx):
 	log("CMD: setscore")
-	print(str(ctx.guild))
+	log("From: " + str(ctx.guild))
 	file = open("scorecounter/%sscores.txt" % str(ctx.guild), "r")
 	best = 0
 	for line in file.readlines():
@@ -106,7 +108,7 @@ async def on_message(ctx):
 @bot.command(name="topscores", help="Gets the top 10 count score for this server")
 async def on_message(ctx, arg=10):
 	log("CMD: setscore")
-	print(str(ctx.guild))
+	log("From: " + str(ctx.guild))
 	file = open("scorecounter/%sscores.txt" % str(ctx.guild), "r")
 	bests = []
 	for line in file.readlines():
@@ -125,6 +127,7 @@ async def on_message(ctx, arg=10):
 @bot.command(name="THICC", help="teehee")
 async def on_message(ctx):
 	log("CMD: thicc")
+	log("From: " + str(ctx.guild))
 	files = os.listdir("res/thicc/")
 	ctx.send(file=discord.File(files[random.randint(0, len(files)) - 1]))
 
