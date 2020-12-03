@@ -37,7 +37,7 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 
 log("open on {TOKEN}")
 
-bot = commands.Bot(command_prefix='ye')
+bot = commands.Bot(command_prefix='ye ')
 
 @bot.event
 async def on_ready():
