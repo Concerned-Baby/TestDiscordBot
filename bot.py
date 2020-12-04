@@ -131,6 +131,15 @@ async def on_message(ctx):
 	files = os.listdir("res/thicc/")
 	ctx.send(file=discord.File(files[random.randint(0, len(files)) - 1]))
 
+@bot.command(name="blame", help="[n/a] blames a random person")
+async def on_message(ctx):
+	log("CMD: blame")
+	log("From: " + str(ctx.guild))
+	#get server members
+	#pick random, (hopefully online), one
+	#return a random blame statement
+	
+
 
 
 @bot.command(name="votekick", help="[n/a] votes for them")
