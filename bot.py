@@ -136,6 +136,7 @@ async def on_message(ctx):
 	log("CMD: blame")
 	log("From: " + str(ctx.guild))
 	print(ctx.guild)
+	print(ctx.guild.members)
 	#get server members
 	#pick random, (hopefully online), one
 	#return a random blame statement
