@@ -243,3 +243,9 @@
 [19:01:40] From: Yeet Nether
 [19:01:51] CMD: setscore
 [19:01:51] From: Yeet Nether
+[10:54:34] open on {TOKEN}
+[10:55:33] CMD: fatshame
+[10:55:33] From: idiots
+[15:01:07] open on {TOKEN}
+[15:01:16] CMD: fatshame
+[15:01:16] From: Yeet Nether
