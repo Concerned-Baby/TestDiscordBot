@@ -138,7 +138,7 @@ async def on_message(ctx):
 	print(ctx.guild)
 	print(ctx.guild.members)
 	#get server members
-	#pick random, (hopefully online), one
+	#pick random, (hopefully online [.online]), one
 	#return a random blame statement
 	
 
