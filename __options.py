@@ -12,7 +12,8 @@ fatquotes = [
 	namereplace + " can only roll down hills\n",
 	namereplace + " is so fat, McDonalds won't serve them\n",
 	namereplace + " is so fat, he's " + namereplace + "\n",
-	namereplace + " is round\n"
+	namereplace + " is round\n",
+	namereplace + " doesn't lift\n"
 ]
 
 def fatgenerate(name):
