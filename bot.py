@@ -137,7 +137,7 @@ async def on_message(ctx):
 	log("From: " + str(ctx.guild))
 	print(ctx.guild)
 	print(ctx.guild.members)
-	print(ctx.guild.members.online)
+	#print(ctx.guild.members.online)
 	#get server members
 	#pick random, (hopefully online [.online]), one
 	#return a random blame statement
