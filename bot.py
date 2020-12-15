@@ -59,6 +59,19 @@ async def on_error(event, *args, **kwargs):
 		else:
 			raise
 #
+#Beating Daniel
+#
+
+@bot.event
+async def on_message(message):
+	if message.author == bot:
+		return
+	print(message.content)
+	if message.content[-2:] == "68":
+		await message.channel.send(message.content[:-2] + "69")
+
+
+#
 # COMMANDS
 #
 @bot.command(name="fatshame", help="literally bullying")
