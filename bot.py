@@ -61,15 +61,25 @@ async def on_error(event, *args, **kwargs):
 #
 #Beating Daniel
 #
-"""
+
 @bot.event
 async def on_message(message):
+	
 	if message.author == bot:
 		return
 	print(message.content)
+	"""
 	if message.content[-2:] == "68":
 		await message.channel.send(message.content[:-2] + "69")
-"""
+	"""
+	if message.content.count("fuck") != 0:
+		old = 0
+		with open('swearjar/%s' % message.author, 'r') as file:
+			old = int(file.read())
+			old += message.content.count("fuck")
+		with open('swearjar/%s' % message.author, 'w') as file:
+			file.write(old)
+
 
 #
 # COMMANDS
