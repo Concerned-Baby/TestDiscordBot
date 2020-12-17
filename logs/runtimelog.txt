@@ -498,3 +498,6 @@
 [09:38:10] open on {TOKEN}
 [09:38:18] CMD: setscore
 [09:38:18] From: Yeet Nether
+[11:14:03] open on {TOKEN}
+[11:14:08] CMD: setscore
+[11:14:08] From: Yeet Nether
