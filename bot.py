@@ -55,7 +55,7 @@ async def on_member_join(member):
 async def on_error(event, *args, **kwargs):
 	with open('logs/errlog.txt', 'a') as file:
 		if event == 'on_message':
-			file.write(f'Unhandled Message: {args[0]}\n')
+			file.write(f'Unhandled Error: {args[0]}\n')
 		else:
 			raise
 #
