@@ -35,13 +35,13 @@ def log(string):
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
-log("open on {TOKEN}")
+log("open on token {TOKEN}")
 
 bot = commands.Bot(command_prefix='ye ')
 
 @bot.event
 async def on_ready():
-	print(f'{bot.user} has connected to Discord!')
+	print('{bot.user} has connected to Discord!')
 
 @bot.event
 async def on_member_join(member):
