@@ -158,7 +158,6 @@ async def on_message(ctx):
 async def on_message(ctx):
 	log("CMD: blame")
 	log("From: " + str(ctx.guild))
-	print(ctx.guild)
 	print(ctx.guild.members)
 	#print(ctx.guild.members.online)
 	#get server members
