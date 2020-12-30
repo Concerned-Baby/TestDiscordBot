@@ -14,7 +14,7 @@ fatquotes = [
 	namereplace + " is so fat, he's %s\n" % namereplace,
 	namereplace + " is round\n",
 	namereplace + " does not lift\n",
-	"i just hate %s because he's fat" % namereplace
+	"i just hate %s because he's fat\n" % namereplace
 ]
 
 def fatgenerate(name):
