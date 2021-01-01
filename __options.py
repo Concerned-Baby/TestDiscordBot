@@ -18,5 +18,5 @@ fatquotes = [
 
 ]
 
-def fatgenerate(name):
-	return fatquotes[int(random.uniform(0, len(fatquotes)))].replace(namereplace, name)
+def fatgenerate(username):
+	return fatquotes[int(random.uniform(0, len(fatquotes)))].replace(namereplace, username)
