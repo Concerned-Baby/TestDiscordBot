@@ -11,7 +11,7 @@ fatquotes = [
 	"%s needs to workout more\n" % namereplace,
 	"%s can only roll down hills\n" % namereplace,
 	"%s is so fat, McDonalds won't serve them\n" % namereplace,
-	"%s is so fat, he's %s\n" % namereplace,
+	"%s is so fat, he's %s\n" % (namereplace, namereplace),
 	"%s is round\n" % namereplace,
 	"%s does not lift\n" % namereplace,
 	"i just hate %s because he's fat\n" % namereplace
