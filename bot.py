@@ -68,10 +68,8 @@ async def on_message(message):
 	if message.author == bot:
 		return
 	print(message.content)
-	"""
 	#if message.content[-2:] == "68":
 	#	await message.channel.send(message.content[:-2] + "69")
-	"""
 	if message.content.count("fuck") != 0 or message.content.count("shit") != 0:
 		old = 0
 		with open('swearjar/%s' % message.author, 'r') as file:
