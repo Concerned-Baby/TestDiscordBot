@@ -87,7 +87,7 @@ async def on_message(ctx, who, times=1):
 	log("CMD: fatshame")
 	log("From: " + str(ctx.guild))
 	if who == "":
-		await ctx.send("Please Specify Who Is Fat [Example: yefatshame @ye boi]")
+		await ctx.send("Please Specify Who Is Fat [Example: ye fatshame @ye boi]")
 	if times > 20:
 		await ctx.send("Fat shame them a little less would ya?")
 	await ctx.send(__options.fatgenerate(str(who)) * times)
