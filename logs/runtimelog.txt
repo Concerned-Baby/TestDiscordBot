@@ -504,3 +504,13 @@
 [21:00:03] open on token {TOKEN}
 [21:00:16] CMD: setscore
 [21:00:16] From: Yeet Nether
+[08:02:13] open on token {TOKEN}
+[08:02:18] CMD: setscore
+[08:02:18] From: Yeet Nether
+[10:34:44] open on token {TOKEN}
+[10:34:48] CMD: setscore
+[10:34:48] From: Yeet Nether
+[10:34:54] CMD: fatshame
+[10:34:54] From: Yeet Nether
+[10:34:55] CMD: setscore
+[10:34:55] From: Yeet Nether
