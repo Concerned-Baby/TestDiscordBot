@@ -83,19 +83,20 @@ async def on_message(message):
 # COMMANDS
 #
 @bot.command(name="fatshame", help="literally bullying")
-async def on_message(ctx, who, times=1):
+async def on_message(ctx, who="", times=1):
 	log("CMD: fatshame")
 	log("From: " + str(ctx.guild))
 	if who == "":
-		await ctx.send("Please Specify Who Is Fat [Example: ye fatshame @ye boi]")
+		await ctx.send("Please Specify Who Is Fat [ye fatshame @ye boi]")
 	if times > 20:
 		await ctx.send("Fat shame them a little less would ya?")
 	await ctx.send(__options.fatgenerate(str(who)) * times)
 
 @bot.command(name="1v1", help="[n/a] sends a 1v1")
-async def on_message(ctx, attendee):
+async def on_message(ctx, attendee=""):
 	log("CMD: 1v1")
-	#await ctx.send(file=discord.File("res/1v1 me noob.png"))
+	if attendee == "":
+		await ctx.send("Please Specify Who Is 1v1ing [ye 1v1 @ye boi]")
 	await ctx.send("its not working. please don't try again")
 
 
