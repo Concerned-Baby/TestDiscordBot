@@ -90,14 +90,16 @@ async def on_message(ctx, who="", times=1):
 		await ctx.send("Please Specify Who Is Fat [ye fatshame @ye boi]")
 	if times > 20:
 		await ctx.send("Fat shame them a little less would ya?")
-	await ctx.send(__options.fatgenerate(str(who)) * times)
+	else:
+		await ctx.send(__options.fatgenerate(str(who)) * times)
 
 @bot.command(name="1v1", help="[n/a] sends a 1v1")
 async def on_message(ctx, attendee=""):
 	log("CMD: 1v1")
 	if attendee == "":
 		await ctx.send("Please Specify Who Is 1v1ing [ye 1v1 @ye boi]")
-	await ctx.send("its not working. please don't try again")
+	else:
+		await ctx.send("its not working. please don't try again")
 
 
 
@@ -108,9 +110,10 @@ async def on_message(ctx):
 	await ctx.send("read the help menu")
 
 @bot.command(name="logscore", help="sets a new score for count")
-async def on_message(ctx, arg):
+async def on_message(ctx, arg=0):
 	log("CMD: setscore")
 	log("From: " + str(ctx.guild))
+	if log 
 	file = open("scorecounter/%sscores.txt" % str(ctx.guild), "a")
 	file.write(str(arg) + "\n")
 	file.close()
