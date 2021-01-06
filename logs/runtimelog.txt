@@ -514,3 +514,107 @@
 [10:34:54] From: Yeet Nether
 [10:34:55] CMD: setscore
 [10:34:55] From: Yeet Nether
+[13:58:12] open on token {TOKEN}
+[13:58:17] CMD: setscore
+[13:58:17] From: Yeet Nether
+[13:58:40] open on token {TOKEN}
+[13:58:45] CMD: fatshame
+[13:58:45] From: Yeet Nether
+[13:58:56] CMD: fatshame
+[13:58:56] From: Yeet Nether
+[13:59:06] CMD: fatshame
+[13:59:06] From: Yeet Nether
+[13:59:10] CMD: fatshame
+[13:59:10] From: Yeet Nether
+[13:59:12] CMD: fatshame
+[13:59:12] From: Yeet Nether
+[13:59:13] CMD: fatshame
+[13:59:13] From: Yeet Nether
+[13:59:15] CMD: fatshame
+[13:59:15] From: Yeet Nether
+[13:59:21] CMD: fatshame
+[13:59:21] From: Yeet Nether
+[13:59:23] CMD: fatshame
+[13:59:23] From: Yeet Nether
+[13:59:24] CMD: fatshame
+[13:59:24] From: Yeet Nether
+[13:59:25] CMD: fatshame
+[13:59:25] From: Yeet Nether
+[13:59:30] CMD: fatshame
+[13:59:30] From: Yeet Nether
+[13:59:31] CMD: fatshame
+[13:59:31] From: Yeet Nether
+[13:59:32] CMD: fatshame
+[13:59:32] From: Yeet Nether
+[13:59:37] CMD: fatshame
+[13:59:37] From: Yeet Nether
+[13:59:41] CMD: fatshame
+[13:59:41] From: Yeet Nether
+[13:59:48] CMD: fatshame
+[13:59:48] From: Yeet Nether
+[13:59:48] CMD: fatshame
+[13:59:48] From: Yeet Nether
+[13:59:49] CMD: fatshame
+[13:59:49] From: Yeet Nether
+[13:59:49] CMD: fatshame
+[13:59:49] From: Yeet Nether
+[13:59:49] CMD: fatshame
+[13:59:49] From: Yeet Nether
+[13:59:50] CMD: fatshame
+[13:59:50] From: Yeet Nether
+[13:59:50] CMD: fatshame
+[13:59:50] From: Yeet Nether
+[13:59:50] CMD: fatshame
+[13:59:50] From: Yeet Nether
+[13:59:50] CMD: fatshame
+[13:59:50] From: Yeet Nether
+[13:59:51] CMD: fatshame
+[13:59:51] From: Yeet Nether
+[13:59:51] CMD: fatshame
+[13:59:51] From: Yeet Nether
+[13:59:51] CMD: fatshame
+[13:59:51] From: Yeet Nether
+[13:59:51] CMD: fatshame
+[13:59:51] From: Yeet Nether
+[13:59:51] CMD: fatshame
+[13:59:51] From: Yeet Nether
+[13:59:51] CMD: fatshame
+[13:59:51] From: Yeet Nether
+[13:59:52] CMD: fatshame
+[13:59:52] From: Yeet Nether
+[13:59:52] CMD: fatshame
+[13:59:52] From: Yeet Nether
+[13:59:52] CMD: fatshame
+[13:59:52] From: Yeet Nether
+[13:59:53] CMD: fatshame
+[13:59:53] From: Yeet Nether
+[14:00:00] CMD: fatshame
+[14:00:00] From: Yeet Nether
+[14:00:00] CMD: fatshame
+[14:00:00] From: Yeet Nether
+[14:00:00] CMD: fatshame
+[14:00:00] From: Yeet Nether
+[14:00:00] CMD: fatshame
+[14:00:00] From: Yeet Nether
+[14:00:01] CMD: fatshame
+[14:00:01] From: Yeet Nether
+[14:00:02] CMD: fatshame
+[14:00:02] From: Yeet Nether
+[14:00:02] CMD: fatshame
+[14:00:02] From: Yeet Nether
+[14:00:03] CMD: fatshame
+[14:00:03] From: Yeet Nether
+[14:00:03] CMD: fatshame
+[14:00:03] From: Yeet Nether
+[14:00:04] CMD: fatshame
+[14:00:04] From: Yeet Nether
+[14:00:05] CMD: fatshame
+[14:00:05] From: Yeet Nether
+[14:00:05] CMD: fatshame
+[14:00:05] From: Yeet Nether
+[14:00:06] CMD: fatshame
+[14:00:06] From: Yeet Nether
+[14:00:08] CMD: fatshame
+[14:00:08] From: Yeet Nether
+[14:00:10] CMD: fatshame
+[14:00:10] From: Yeet Nether
