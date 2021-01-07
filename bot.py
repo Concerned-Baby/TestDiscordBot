@@ -113,11 +113,13 @@ async def on_message(ctx):
 async def on_message(ctx, arg=0):
 	log("CMD: setscore")
 	log("From: " + str(ctx.guild))
-	if log 
-	file = open("scorecounter/%sscores.txt" % str(ctx.guild), "a")
-	file.write(str(arg) + "\n")
-	file.close()
-	await ctx.send("New Score: " + str(arg) + " Logged")
+	if arg == 0:
+		await ctx.send("Please Enter A Score [ye logscore 69]")
+	else:
+		file = open("scorecounter/%sscores.txt" % str(ctx.guild), "a")
+		file.write(str(arg) + "\n")
+		file.close()
+		await ctx.send("New Score: " + str(arg) + " Logged")
 
 @bot.command(name="topscore", help="Gets the top count score for this server")
 async def on_message(ctx):
