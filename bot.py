@@ -163,6 +163,8 @@ async def on_message(ctx):
 	log("CMD: blame")
 	log("From: " + str(ctx.guild))
 	print(ctx.guild.members)
+	for user in ctx.guild.menbers:
+		print(user.presence.status)
 	#print(ctx.guild.members.online)
 	#get server members
 	#pick random, (hopefully online [.online]), one
