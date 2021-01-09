@@ -618,3 +618,6 @@
 [14:00:08] From: Yeet Nether
 [14:00:10] CMD: fatshame
 [14:00:10] From: Yeet Nether
+[10:36:49] open on token {TOKEN}
+[10:36:58] CMD: setscore
+[10:36:58] From: Yeet Nether
