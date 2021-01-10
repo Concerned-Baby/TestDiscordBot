@@ -15,8 +15,13 @@ fatquotes = [
 	"%s is round\n" % namereplace,
 	"%s does not lift\n" % namereplace,
 	"i just hate %s because he's fat\n" % namereplace
-
+]
+blamequotes [
+	"It's %s fault" % namereplace
 ]
 
 def fatgenerate(username):
 	return fatquotes[int(random.uniform(0, len(fatquotes)))].replace(namereplace, username)
+
+def blamegenerate(names):
+	return blamequotes[int(random.uniform(0, len(blamequotes)))].replace(namereplace, names[random.uniform(0, len(names))])

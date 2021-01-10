@@ -167,6 +167,8 @@ async def on_message(ctx):
 	for user in ctx.guild.menbers:
 		print(user.presence.status)
 	print (onliners)
+	await ctx.send(__options.blamegenerate(onliners))
+
 	#print(ctx.guild.members.online)
 	#get server members
 	#pick random, (hopefully online [.online]), one
