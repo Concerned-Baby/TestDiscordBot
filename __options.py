@@ -16,7 +16,7 @@ fatquotes = [
 	"%s does not lift\n" % namereplace,
 	"i just hate %s because he's fat\n" % namereplace
 ]
-blamequotes [
+blamequotes = [
 	"It's %s fault" % namereplace
 ]
 
