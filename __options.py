@@ -17,7 +17,8 @@ fatquotes = [
 	"i just hate %s because he's fat\n" % namereplace
 ]
 blamequotes = [
-	"It's %s fault" % namereplace
+	"It's %s fault" % namereplace,
+	"%s did it" % namereplace
 ]
 
 def fatgenerate(username):
