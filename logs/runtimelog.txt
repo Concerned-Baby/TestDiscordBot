@@ -629,3 +629,11 @@
 [12:10:03] open on token {TOKEN}
 [12:10:09] CMD: fatshame
 [12:10:09] From: The local dumpster
+[10:19:05] open on token {TOKEN}
+[10:19:08] CMD: setscore
+[10:19:08] From: Yeet Nether
+[10:19:21] CMD: fatshame
+[10:19:21] From: The local dumpster
+[16:19:01] open on token {TOKEN}
+[16:19:03] CMD: setscore
+[16:19:03] From: Yeet Nether
