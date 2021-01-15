@@ -162,20 +162,12 @@ async def on_message(ctx):
 async def on_message(ctx):
 	log("CMD: blame")
 	log("From: " + str(ctx.guild))
-	print(ctx.guild.members)
+	#print(ctx.guild.members)
 	onliners = [user for user in ctx.guild.members if user.presence.status != "offline"]
-	for user in ctx.guild.menbers:
-		print(user.presence.status)
-	print (onliners)
+	#for user in ctx.guild.menbers:
+	#	print(user.presence.status)
+	#print (onliners)
 	await ctx.send(__options.blamegenerate(onliners))
-
-	#print(ctx.guild.members.online)
-	#get server members
-	#pick random, (hopefully online [.online]), one
-	#return a random blame statement
-	
-
-
 
 @bot.command(name="votekick", help="[n/a] votes for them")
 async def on_message(ctx, arg): #needs random chance, needs to get @'s, needs to disconnect someone
