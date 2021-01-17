@@ -35,13 +35,13 @@ def log(string):
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
-log("open on token {TOKEN}")
+log(f"open on token {TOKEN}")
 
 bot = commands.Bot(command_prefix='ye ')
 
 @bot.event
 async def on_ready():
-	print('{bot.user} has connected to Discord!')
+	print(f'{bot.user} has connected to Discord!')
 
 @bot.event
 async def on_member_join(member):
@@ -142,8 +142,7 @@ async def on_message(ctx, arg=10):
 		bests.append(int(line))
 	file.close()
 	bests.sort()
-	text = ""
-	text += ("Best %d Scores for %s: \n" % (arg, str(ctx.guild)))
+	text = ("Best %d Scores for %s: \n" % (arg, str(ctx.guild)))
 	for i in range(1, arg + 1):
 		try:
 			text += ("%d)\t%d\n" % (i, bests[-1 * i]))
