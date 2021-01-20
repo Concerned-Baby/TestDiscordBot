@@ -173,8 +173,6 @@ async def on_message(ctx, arg): #needs random chance, needs to get @'s, needs to
 #make sure that the vc's are being iterated throught
 #make sure args are correct, and sent a message if not
 	log("CMD: votekick")
-	print(str(ctx))
-	#print(ctx.guild.voice_channels)
 	for vc in ctx.guild.voice_channels:
 		print("VC Found: " + str(vc)) #look for different attributes
 		print("Members: " + str(vc.members)) #not recognizing members for some reason
