@@ -9,7 +9,6 @@ raise keyword
 __IDEA__
 need to give prompt on error
 except
-random person generator
 clear logs on startup
 
 __NOTES__
@@ -32,12 +31,18 @@ def log(string):
 	log.write("[%s] %s\n" % (str(current_time), string))
 	log.close()
 
+def clearLog():
+	log = open("logs/runtimelog.txt", "w")
+	log.write("")
+	log.close()
+
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
 log(f"open on token {TOKEN}")
 
 bot = commands.Bot(command_prefix='ye ')
+clearLog()
 
 @bot.event
 async def on_ready():
@@ -47,9 +52,7 @@ async def on_ready():
 async def on_member_join(member):
 	log(f"Member join {member.name}")
 	await member.create_dm()
-	await member.dm_channel.send(
-		f"Hi {member.name}, welcome nerd"
-	)
+	await member.dm_channel.send(f"Hi {member.name}, welcome nerd")
 
 @bot.event
 async def on_error(event, *args, **kwargs):
@@ -57,27 +60,7 @@ async def on_error(event, *args, **kwargs):
 		if event == 'on_message':
 			file.write(f'Unhandled Error: {args[0]}\n')
 		else:
-			raise
-#
-#Beating Daniel
-#
-"""
-@bot.event
-async def on_message(message):
-	
-	if message.author == bot:
-		return
-	print(message.content)
-	#if message.content[-2:] == "68":
-	#	await message.channel.send(message.content[:-2] + "69")
-	if message.content.count("fuck") != 0 or message.content.count("shit") != 0:
-		old = 0
-		with open('swearjar/%s' % message.author, 'r') as file:
-			old = int(file.read())
-			old += message.content.count("fuck") + message.content.count("shit") != 0
-		with open('swearjar/%s' % message.author, 'w') as file:
-			file.write(old)
-"""
+			file.write("idk what happened good luck")
 
 #
 # COMMANDS
@@ -89,7 +72,7 @@ async def on_message(ctx, who="", times=1):
 	if who == "":
 		await ctx.send("Please Specify Who Is Fat [ye fatshame @ye boi]")
 	if times > 20:
-		await ctx.send("Fat shame them a little less would ya?")
+		await ctx.send("Fat shame them a little less, we condone mass bullying")
 	else:
 		await ctx.send(__options.fatgenerate(str(who)) * times)
 
@@ -114,7 +97,7 @@ async def on_message(ctx, arg=0):
 	log("CMD: setscore")
 	log("From: " + str(ctx.guild))
 	if arg == 0:
-		await ctx.send("Please Enter A Score [ye logscore 69]")
+		await ctx.send("Please Enter A Non-Zero Score [ye logscore 69]")
 	else:
 		file = open("scorecounter/%sscores.txt" % str(ctx.guild), "a")
 		file.write(str(arg) + "\n")
@@ -162,38 +145,5 @@ async def on_message(ctx):
 	log("CMD: blame")
 	log("From: " + str(ctx.guild))
 	await ctx.send(__options.blamegenerate([user for user in ctx.guild.members if user.presence.status != "offline"]))
-
-@bot.command(name="votekick", help="[n/a] votes for them")
-async def on_message(ctx, arg): #needs random chance, needs to get @'s, needs to disconnect someone
-#needs to get a @'d person
-#guild --> voice channels --> people
-
-#TODO:
-#match channel members to args
-#make sure that the vc's are being iterated throught
-#make sure args are correct, and sent a message if not
-	log("CMD: votekick")
-	for vc in ctx.guild.voice_channels:
-		print("VC Found: " + str(vc)) #look for different attributes
-		print("Members: " + str(vc.members)) #not recognizing members for some reason
-		for member in vc.members:
-			print("Member display:\t " + str(member.display_name))
-			print("Member: \t" + str(member.id))
-			print("Arg: \t" + str(ctx.args[1])[3:-1])
-			print("Is Node: \t" + str(str(ctx.args[1])[3:-1] == str(member.id)))
-			print("Is Author: \t" + str(ctx.author))
-	await ctx.send(str(ctx.args[1]) + " was not an Imposter")
-"""
-else:
-	person @'d + 1
-	send (num / <needed>)
-if <people in senders vc> / 2 + 1 < amountL:
-	if person in vc
-		if *chance*
-			is imposter
-		is not imposter
-		kick
-"""
-
 
 bot.run(TOKEN)
