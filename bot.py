@@ -36,13 +36,13 @@ def clearLog():
 	log.write("")
 	log.close()
 
+clearLog()
+
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
 log(f"open on token {TOKEN}")
-
 bot = commands.Bot(command_prefix='ye ')
-clearLog()
 
 @bot.event
 async def on_ready():
