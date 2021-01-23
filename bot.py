@@ -140,7 +140,7 @@ async def on_message(ctx):
 	files = os.listdir("res/thicc/")
 	await ctx.send(file=discord.File("res/thicc/" + files[random.randint(0, len(files)) - 1]))
 
-@bot.command(name="blame", help="blames a random person")
+@bot.command(name="blame", help="[n/a] blames a random person")
 async def on_message(ctx):
 	log("CMD: blame")
 	log("From: " + str(ctx.guild))
