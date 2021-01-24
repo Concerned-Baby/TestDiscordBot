@@ -41,7 +41,7 @@ clearLog()
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
-log(f"open on token {TOKEN}")
+log("open on token [sike]")
 bot = commands.Bot(command_prefix='ye ')
 
 @bot.event
