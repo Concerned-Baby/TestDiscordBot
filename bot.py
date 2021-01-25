@@ -115,7 +115,7 @@ async def on_message(ctx):
 	file.close()
 	await ctx.send("Best Score: " + str(best))
 
-@bot.command(name="topscores", help="Gets the top 10 count score for this server")
+@bot.command(name="topscores", help="Gets the top x score's for this server")
 async def on_message(ctx, arg=10):
 	log("CMD: setscore")
 	log("From: " + str(ctx.guild))
