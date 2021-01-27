@@ -144,6 +144,6 @@ async def on_message(ctx):
 async def on_message(ctx):
 	log("CMD: blame")
 	log("From: " + str(ctx.guild))
-	await ctx.send(__options.blamegenerate(ctx.guild.members)
+	await ctx.send(__options.blamegenerate([str(member) for member in ctx.guild.members])
 
 bot.run(TOKEN)
