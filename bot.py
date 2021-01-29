@@ -41,7 +41,7 @@ clearLog()
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
-log("open on token [sike]")
+log("bot open on port 33472")
 bot = commands.Bot(command_prefix='ye ')
 
 @bot.event
@@ -83,8 +83,6 @@ async def on_message(ctx, attendee=""):
 		await ctx.send("Please Specify Who Is 1v1ing [ye 1v1 @ye boi]")
 	else:
 		await ctx.send("its not working. please don't try again")
-
-
 
 @bot.command(name="k", help="please dont use this")
 async def on_message(ctx):
