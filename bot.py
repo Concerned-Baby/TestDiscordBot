@@ -72,7 +72,7 @@ async def on_message(ctx, who="", times=1):
 	if who == "":
 		await ctx.send("Please Specify Who Is Fat [ye fatshame @ye boi]")
 	if times > 20:
-		await ctx.send("Fat shame them a little less, we condone mass bullying")
+		await ctx.send(__options.condonebullying())
 	else:
 		await ctx.send(__options.fatgenerate(str(who)) * times)
 

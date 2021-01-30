@@ -24,9 +24,16 @@ blamequotes = [
 	"Blame %s" % namereplace,
 	"I'm telling you, it's %s" % namereplace
 ]
+condonebullyingquotes = [
+	"bullt them a bit less",
+	"don't fatshame that much"
+]
 
 def fatgenerate(username):
 	return fatquotes[int(random.uniform(0, len(fatquotes)))].replace(namereplace, username)
 
 def blamegenerate(names):
 	return blamequotes[int(random.uniform(0, len(blamequotes)))].replace(namereplace, names[random.uniform(0, len(names))])
+
+def condonebullying():
+	return condonebullyingquotes[int(random.uniform(0, len(blamequotes)))]
