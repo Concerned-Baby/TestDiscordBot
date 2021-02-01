@@ -26,7 +26,8 @@ blamequotes = [
 ]
 condonebullyingquotes = [
 	"bullt them a bit less",
-	"don't fatshame that much"
+	"don't fatshame that much",
+	"we condone mass bullying"
 ]
 
 def fatgenerate(username):
