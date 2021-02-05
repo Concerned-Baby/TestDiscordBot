@@ -65,6 +65,7 @@ async def on_error(event, *args, **kwargs):
 #
 # COMMANDS
 #
+
 @bot.command(name="fatshame", help="literally bullying")
 async def on_message(ctx, who="", times=1):
 	log("CMD: fatshame")
